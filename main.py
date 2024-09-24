@@ -2,7 +2,7 @@ import polars as pl
 import glob
 
 # Path to the folder containing invoice files
-invoices_folder = "invoices"
+invoices_folder = "Invoices"
 
 # Use glob to get a list of all CSV files in the "invoices" folder
 invoice_files = sorted(glob.glob(f"{invoices_folder}/*.csv"))
