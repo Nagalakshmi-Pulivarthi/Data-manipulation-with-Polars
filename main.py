@@ -11,7 +11,7 @@ invoice_files = sorted(glob.glob(f"{invoices_folder}/*.csv"))
 for file in invoice_files:
     # Read the CSV file into a Polars DataFrame
     df = pl.read_csv(file)
-    print(df)
+    # print(df)
     # Calculate the sum of the "Total Price" column
     total_sum = df['Total Price'].sum()
     
