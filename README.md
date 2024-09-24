@@ -1,5 +1,5 @@
 # Data-manipulation-with-Polars
-Polars is a Python library for data analysis and visualization that is growing and improving fast.
+Polars is a Python library for data analysis and visualization.
 How the program Works:
 (1) The program makes a list of all the CSV files located in the “Invoices” directory.
 (2) Then, the program iterates over the files and loads each file as a Polars dataframe. 
