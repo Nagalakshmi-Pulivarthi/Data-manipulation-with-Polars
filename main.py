@@ -2,22 +2,22 @@ import polars as pl
 import glob
 
 # Path to the folder containing invoice files
-invoices_folder = "Invoices"
+my_folder = "Invoices"
 
 # Use glob to get a list of all CSV files in the "invoices" folder
-invoice_files = sorted(glob.glob(f"{invoices_folder}/*.csv"))
+invoice_files = sorted(glob.glob(f"{my_folder}/*.csv"))
 
 # Loop through each invoice file
 for file in invoice_files:
     # Read the CSV file into a Polars DataFrame
-    df = pl.read_csv(file)
-    print(df)
+    data_df = pl.read_csv(file)
+    print(data_df)
     # Calculate the sum of the "Total Price" column
-    total_sum = df['Total Price'].sum()
+    total_sum = data_df['Total Price'].sum()
     
     # Get the number of invoices (rows)
-    item_count = df.height
-    item_sum=df["Quantity"].sum()
+    item_count = data_df.height
+    item_sum=data_df["Quantity"].sum()
     # Print the results for each file
     print("*" *30)
     print(f"File: {file}")
