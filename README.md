@@ -5,6 +5,7 @@ This repository includes two essential files:
 1. Introduction to Python Polars: This file provides a comprehensive overview of Python Polars, demonstrating how to use it for data manipulation as an alternative to pandas.
 
 2. Advanced Data Retrieval (main2.py): This file builds on the basics, utilizing the same syntax but incorporating more complex functions to extract detailed data, such as generating customer reports.
+   
 Additionally, the project leverages the Glob library, a Python tool for searching files that match specific patterns or names, enhancing file handling capabilities.
 
 
